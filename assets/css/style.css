@@ -85,9 +85,22 @@ body {
 .info-text span {
     font-weight: 600;
 }
+
 .wrapper ul {
-    display: none;
+    height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.wrapper.active ul {
     padding-bottom: 45px;
+    height: 355px;
+    opacity: 1;
+}
+
+.wrapper.active .info-text {
+    display: none;
 }
 
 .wrapper ul li {
@@ -123,7 +136,7 @@ ul .word img {
 .content li .details {
     padding-left: 10px;
     border-radius: 4px 0 0 4px;
-    border-left: 3px solid #4d59fb;
+    border-left: 4px solid #4d59fb;
 }
 
 .content li .details p {
