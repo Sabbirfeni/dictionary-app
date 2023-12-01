@@ -88,14 +88,14 @@ body {
 
 .wrapper ul {
     height: 0;
-    opacity: 0;
+    opacity: 1;
     overflow: hidden;
     transition: all 0.3s ease;
 }
 
 .wrapper.active ul {
-    padding-bottom: 45px;
-    height: 355px;
+    padding-bottom: 20px;
+    height: fit-content;
     opacity: 1;
 }
 
